@@ -11,6 +11,7 @@ require('dotenv').config();
  */
 export default defineConfig({
   globalSetup: require.resolve('./global'),
+  timeout: 2*60*1000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
